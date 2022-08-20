@@ -1,0 +1,24 @@
+all are post:
+----------------
+
+http://localhost:8090/bankapp/api/transfer
+
+{
+        "fromAcc": 1,
+        "toAcc": 2,
+        "amount":100
+}
+
+
+http://localhost:8090/bankapp/api/deposit
+{
+        "accId": 1,
+        "amount":100
+}
+
+http://localhost:8090/bankapp/api/withdraw
+
+{
+        "accId": 2,
+        "amount":100
+}
