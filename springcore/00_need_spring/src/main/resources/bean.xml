@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!--  i want to teach spring that passanger is depends on car -->
+	<!-- singleton , prototype factory
+		scope="singleton" or "prototype" 
+		eager vs lazy lazy-init="true" or lazy-init="false"
+		
+		concept of autowrire : shortCut
+		primary="true" Imp					autowire-candidate="false"
+	 -->
+	<bean id="p" class="com.demo.Passanger" autowire="byType">
+		<property name="name" value="raj"/>
+	</bean>
+	<bean id="pb" class="com.demo.Passanger" autowire="byType">
+		<property name="name" value="raj"/>
+	</bean>
+	
+	<bean id="v1" class="com.demo.Bike" />
+	<bean id="v2" class="com.demo.Car" primary="true"/>
+	
+	
+</beans>
+
+
+
+
+
+
+
+

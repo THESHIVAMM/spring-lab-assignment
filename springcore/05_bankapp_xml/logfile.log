@@ -1,0 +1,22 @@
+INFO  | 2022-08-16 14:53:29 | [main] service.AccountServiceImpl (AccountServiceImpl.java:69) - fund is transfer and method take : 1000 ms
+WARN  | 2022-08-16 15:53:52 | [main] support.AbstractApplicationContext (AbstractApplicationContext.java:559) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountDaoImplJdbc' defined in file [/home/raj/Documents/ora_spring_training/core/05_bankapp_xml/target/classes/com/bankapp/model/persistance/AccountDaoImplJdbc.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting ')' at character position 35
+execution(public void transfer(int fromAccNo, int toAccountNo, double amount))
+                                   ^^^^^^^^^
+
+INFO  | 2022-08-16 15:54:43 | [main] util.LoggingAspect (LoggingAspect.java:26) - fund is transfer and method take : 1000 ms
+INFO  | 2022-08-16 15:57:04 | [main] util.LoggingAspect (LoggingAspect.java:26) - fund is transfer and method take : 1000 ms
+INFO  | 2022-08-16 15:57:45 | [main] util.LoggingAspect (LoggingAspect.java:26) - fund is transfer and method take : 1000 ms
+INFO  | 2022-08-16 15:59:47 | [main] util.LoggingAspect (LoggingAspect.java:26) - fund is transfer and method take : 1000 ms
+INFO  | 2022-08-16 16:02:03 | [main] util.LoggingAspect (LoggingAspect.java:26) - fund is transfer and method take : 0 ms
+INFO  | 2022-08-16 16:02:03 | [main] util.LoggingAspect (LoggingAspect.java:26) - fund is transfer and method take : 7 ms
+INFO  | 2022-08-16 16:03:23 | [main] util.LoggingAspect (LoggingAspect.java:26) - fund is transfer and method take : 1 ms
+INFO  | 2022-08-16 16:03:58 | [main] util.LoggingAspect (LoggingAspect.java:26) - fund is transfer and method take : 0 ms
+INFO  | 2022-08-16 16:03:59 | [main] util.LoggingAspect (LoggingAspect.java:26) - fund is transfer and method take : 1000 ms
+INFO  | 2022-08-16 16:06:18 | [main] util.LoggingAspect (LoggingAspect.java:26) - com.bankapp.model.service.AccountService 0 ms
+INFO  | 2022-08-16 16:06:19 | [main] util.LoggingAspect (LoggingAspect.java:26) - com.bankapp.model.service.AccountService 1001 ms
+INFO  | 2022-08-16 16:07:07 | [main] util.LoggingAspect (LoggingAspect.java:26) - com.bankapp.model.service.AccountService 0 ms
+INFO  | 2022-08-16 16:07:08 | [main] util.LoggingAspect (LoggingAspect.java:26) - com.bankapp.model.service.AccountService 1000 ms
+INFO  | 2022-08-16 16:09:17 | [main] util.LoggingAspect (LoggingAspect.java:34) - getAll 0 ms
+INFO  | 2022-08-16 16:09:18 | [main] util.LoggingAspect (LoggingAspect.java:34) - transfer 1001 ms
+INFO  | 2022-08-16 16:11:05 | [main] util.LoggingAspect (LoggingAspect.java:38) - getAll 0 ms
+INFO  | 2022-08-16 16:11:06 | [main] util.LoggingAspect (LoggingAspect.java:38) - transfer 1000 ms
